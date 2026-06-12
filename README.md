@@ -1,6 +1,11 @@
 <!-- mcp-name: io.github.askadvaith/mcp-state-sidecar -->
 # MCP State Sidecar Server
 
+[![PyPI version](https://img.shields.io/pypi/v/mcp-state-sidecar.svg)](https://pypi.org/project/mcp-state-sidecar/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mcp-state-sidecar.svg)](https://pypi.org/project/mcp-state-sidecar/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![MCP Registry](https://img.shields.io/badge/MCP-Registry-orange.svg)](https://registry.modelcontextprotocol.io)
+
 An MCP-native state sidecar that externalises workflow state for distributed agent deployments. 
 
 Quite a simple idea really; instead of storing state inside agents (which breaks when processes crash, scale horizontally, or span multiple frameworks), agents write to and read from this sidecar over the **Model Context Protocol (MCP)**. The sidecar is itself an MCP server; agents call its tools exactly the same way they call any other tool!
